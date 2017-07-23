@@ -1,6 +1,6 @@
 [![Stories in Ready](https://badge.waffle.io/ilkeraksu16/Ionic3-Tetkik-Takip-Uygulamas-.png?label=ready&title=Ready)](https://waffle.io/ilkeraksu16/Ionic3-Tetkik-Takip-Uygulamas-?utm_source=badge)
 
-[![Stories in Progress](https://badge.waffle.io/ilkeraksu16/Ionic3-Tetkik-Takip-Uygulamas-.png?label=done&title=Done)](https://waffle.io/ilkeraksu16/Ionic3-Tetkik-Takip-Uygulamas-?utm_source=badge)
+[![Stories in Progress](https://badge.waffle.io/ilkeraksu16/Ionic3-Tetkik-Takip-Uygulamas-.png?label=backlog&title=backlog)](https://waffle.io/ilkeraksu16/Ionic3-Tetkik-Takip-Uygulamas-?utm_source=badge)
 
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
