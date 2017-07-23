@@ -1,4 +1,6 @@
 [![Stories in Ready](https://badge.waffle.io/ilkeraksu16/Ionic3-Tetkik-Takip-Uygulamas-.png?label=ready&title=Ready)](https://waffle.io/ilkeraksu16/Ionic3-Tetkik-Takip-Uygulamas-?utm_source=badge)
+[![Stories in Progress](https://badge.waffle.io/ilkeraksu16/Ionic3-Tetkik-Takip-Uygulamas-.png?label=InProgress&title=In Progress)](https://waffle.io/ilkeraksu16/Ionic3-Tetkik-Takip-Uygulamas-?utm_source=badge)
+
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
