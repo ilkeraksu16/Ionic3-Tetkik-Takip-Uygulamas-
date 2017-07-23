@@ -37,7 +37,7 @@ export class HomePage {
   Load(){
     let loader = this.loadingCtrl.create({
       content: "Lütfen Bekleyiniz.",
-      duration: 500
+      duration: 550
     });
     loader.present();
   }
