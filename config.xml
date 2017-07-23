@@ -29,6 +29,10 @@
     <preference name="SplashScreen" value="screen"/>
     <preference name="SplashScreenDelay" value="3000"/>
 
+    <!-- animasyon için gerekli-->
+    <preference name="SplashScreenDelay" value="0"/>
+<preference name="ShowSplashScreen" value="false"/>
+
     <platform name="android">
         <allow-intent href="market:*"/>
         <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>

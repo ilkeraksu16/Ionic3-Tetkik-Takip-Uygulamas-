@@ -8,6 +8,7 @@ import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {ListePage} from '../pages/liste/liste';
+import { HosgeldinizPage } from '../pages/hosgeldiniz/hosgeldiniz';
 import { TetkikProvider } from '../providers/tetkik/tetkik';
 import { DenePage } from '../pages/dene/dene';
 
@@ -16,7 +17,8 @@ import { DenePage } from '../pages/dene/dene';
     MyApp,
     HomePage,
     ListePage,
-    DenePage
+    DenePage,
+    HosgeldinizPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { DenePage } from '../pages/dene/dene';
     MyApp,
     HomePage,
     ListePage,
-    DenePage
+    DenePage,
+    HosgeldinizPage
   ],
   providers: [
     StatusBar,

@@ -1,3 +1,11 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <h2 style="color:#fff"><b>Hoş Geldiniz</b></h2>
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+<!-- silinebilir-->
 
 <ion-content class="resim">
   
@@ -24,7 +32,7 @@
 <ion-row class="e">
   <ion-col col-1><ion-icon style="color:#fff" ios="ios-contacts-outline" md="md-contacts"></ion-icon></ion-col>
   <ion-col col-10>
-<ion-input input="text" placeholder="TC. No Giriniz" style="color:#fff" [(ngModel)]="Tc_no">
+<ion-input input="text" placeholder="TC. No Giriniz" style="color:#fff" [(ngModel)]="Tc_no" >
   </ion-input>
   </ion-col>
   <ion-col col-1></ion-col>
