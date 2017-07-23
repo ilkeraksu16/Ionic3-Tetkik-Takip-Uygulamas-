@@ -1,0 +1,44 @@
+
+<ion-content class="resim">
+  
+<ion-grid>
+
+  <ion-row>
+  <ion-col text-center class="b">
+    <img src="assets/image/indir.jpg" class="img" alt="">
+  </ion-col>
+</ion-row>
+<ion-row class="tetkik">
+  <ion-col text-center><h2>Tetkik Takip</h2></ion-col>
+</ion-row>
+<ion-row class="c">
+  <ion-col>
+    <hr>
+  </ion-col>
+</ion-row>
+<ion-row class="d">
+<ion-col col-1></ion-col>
+<ion-col col-5><h5>TC. Numarası</h5></ion-col>
+<ion-col col-6></ion-col>
+</ion-row>
+<ion-row class="e">
+  <ion-col col-1><ion-icon style="color:#fff" ios="ios-contacts-outline" md="md-contacts"></ion-icon></ion-col>
+  <ion-col col-10>
+<ion-input input="text" placeholder="TC. No Giriniz" style="color:#fff" [(ngModel)]="Tc_no">
+  </ion-input>
+  </ion-col>
+  <ion-col col-1></ion-col>
+  </ion-row>
+
+
+<ion-row class="buton">
+  <ion-col col-1></ion-col>
+  <ion-col col-10>
+    <button ion-button round block outline color="beyaz" (click)="GetTetkikData()">Tamam</button>
+  </ion-col>
+  <ion-col col-1></ion-col>
+</ion-row>
+</ion-grid>
+
+
+</ion-content>

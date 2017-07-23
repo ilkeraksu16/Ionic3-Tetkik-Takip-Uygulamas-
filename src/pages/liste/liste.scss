@@ -1,0 +1,224 @@
+.md,.ios{
+
+    page-liste {
+
+        /*tarih yazı rengi*/
+        .tarih{
+            color:red;
+        }
+        /*doktor yazı rengi*/
+        .doktor{
+            color:red;
+        }
+        /*serach bar rengini kırmızı*/
+
+        /*serach bar için*/
+        .search{
+            background:#f53d3d;
+            @media all and (max-device-width:1200px){
+            ion-searchbar{
+               height:10px;
+                input{
+                    font-size: 30px;
+                    size:70px;
+                }
+            }
+        }
+
+            @media all and (max-device-width:768px){
+           ion-searchbar{
+                height:50px;
+                input{
+                    font-size:25px;
+                }
+            }
+        }
+
+            @media all and (max-device-width:640px){
+           ion-searchbar{
+                height:30px;
+                input{
+                    font-size:20px;
+                    
+                }
+            }
+        }
+
+            @media all and (max-device-width:360px){
+           ion-searchbar{
+                height:30px;
+                input{
+                    font-size:18px;
+                    
+                }
+            }
+        }
+
+        }
+        /*üst navbar için gerekli*/
+        ion-navbar{
+            @media all and (max-device-width:1200px){
+            h4{
+                //height:70px;
+                font-size:50px;
+            }
+            height:80px;
+        }
+        @media all and (max-device-width:768px){
+            h4{
+                
+                font-size:40px;
+            }
+            height:70px;
+        }
+        @media all and (max-device-width:640px){
+            h4{
+                font-size:25px;
+            }
+        }
+        @media all and (max-device-width:360px){
+           
+            h4{
+                font-size:20px;
+            }
+        }
+        }
+
+        /*tetkik adı kısmı*/
+        .tetkik_adi{
+
+            @media all and (max-device-width:1200px){
+            button{
+                height:75px;
+                font-size:35px;
+            }
+        }
+        @media all and (max-device-width:768px){
+            button{
+                height:65px;
+                font-size:30px;
+            }
+        }
+        @media all and (max-device-width:640px){
+            button{
+                height:42px;
+                font-size: 19px;
+            }
+        }
+        @media all and (max-device-width:360px){
+            button{
+                height:40px;
+                font-size:13px;
+            }
+        }
+
+
+        }
+
+        /*içerik kısmı border*/
+.icerik{
+
+    @media all and (max-device-width:1200px){
+        margin-bottom:10px;
+        border-bottom:4px solid #488aff;
+        }
+        @media all and (max-device-width:768px){
+            
+            margin-bottom:10px;
+        border-bottom:4px solid #488aff;
+        }
+        @media all and (max-device-width:640px){
+            margin-bottom:10px;
+        border-bottom:2px solid #488aff;
+        }
+        @media all and (max-device-width:360px){
+            margin-bottom:10px;
+        border-bottom:2px solid #488aff;
+        }
+}
+
+/*içerik kısmı tarih*/
+    .tarih{
+
+         @media all and (max-device-width:1200px){
+             
+            font-size: 30px;
+            ion-icon{
+             font-size: 50px;    
+            }
+        }
+        @media all and (max-device-width:768px){
+            font-size:25px;
+            ion-icon{
+                font-size: 40px;
+            }
+            
+        }
+        @media all and (max-device-width:640px){
+            font-size:18px;
+            ion-icon{
+                font-size: 20px;
+            }
+        }
+        @media all and (max-device-width:360px){
+            font-size:15px;
+            ion-icon{
+                    font-size: 17px;       
+            }
+        }
+
+    }
+    /*pipe kısmı */
+    .pipe{
+
+        @media all and (max-device-width:1200px){
+             
+            font-size: 40px;
+            
+        }
+        @media all and (max-device-width:768px){
+            font-size: 30px;
+            
+        }
+        @media all and (max-device-width:640px){
+            font-size: 20px;
+        }
+        @media all and (max-device-width:360px){
+            font-size: 20px;
+        }
+
+    }
+    /*içerik kısmı doktor*/
+    .doktor{
+        @media all and (max-device-width:1200px){
+             
+            font-size: 30px;
+            ion-icon{
+             font-size: 50px;    
+            }
+        }
+        @media all and (max-device-width:768px){
+            font-size:25px;
+            ion-icon{
+                font-size: 40px;
+            }
+        }
+        @media all and (max-device-width:640px){
+            font-size:18px;
+            ion-icon{
+                font-size: 20px;
+            }
+        }
+        @media all and (max-device-width:360px){
+            font-size:16px;
+            ion-icon{
+                    font-size: 18px;       
+            }
+        }
+    }
+
+
+}
+}
+
+
