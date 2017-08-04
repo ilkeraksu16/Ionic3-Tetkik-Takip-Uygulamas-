@@ -11,6 +11,10 @@ import {ListePage} from '../pages/liste/liste';
 import { HosgeldinizPage } from '../pages/hosgeldiniz/hosgeldiniz';
 import { TetkikProvider } from '../providers/tetkik/tetkik';
 import { DenePage } from '../pages/dene/dene';
+import { FiltrePipe } from '../pipes/filtre/filtre';
+import {APage} from '../pages/a/a';
+
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [
@@ -18,12 +22,15 @@ import { DenePage } from '../pages/dene/dene';
     HomePage,
     ListePage,
     DenePage,
-    HosgeldinizPage
+    HosgeldinizPage,
+    FiltrePipe,
+    APage,
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    HttpModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -31,7 +38,8 @@ import { DenePage } from '../pages/dene/dene';
     HomePage,
     ListePage,
     DenePage,
-    HosgeldinizPage
+    HosgeldinizPage,
+    APage
   ],
   providers: [
     StatusBar,
