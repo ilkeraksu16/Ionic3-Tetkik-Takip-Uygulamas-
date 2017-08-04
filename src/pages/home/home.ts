@@ -1,26 +1,33 @@
-import { Component } from '@angular/core';
+import { Component ,OnInit} from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { TetkikProvider } from '../../providers/tetkik/tetkik';
 import {ListePage} from '../liste/liste';
 import 'rxjs/add/operator/map';
 import { LoadingController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 
-export class HomePage {
+export class HomePage implements OnInit{
   Tc_no:string;
   liste:any;
   kontrol:any;
   uzunluk:any;
   
-  splash = true;
-  secondPage = HomePage;
+  //splash = true;
+  //secondPage = HomePage;
 
-  constructor(public navCtrl: NavController,private TetkikService : TetkikProvider,public loadingCtrl: LoadingController,public alertCtrl: AlertController) {}
+  constructor(public navCtrl: NavController,private TetkikService : TetkikProvider,public loadingCtrl: LoadingController,public alertCtrl: AlertController,private storage:Storage) {
+
+  }
+
+  ngOnInit(){
+    this.storage.set('id',0);//0
+  }
 
   Length_Account(){
     //this.uzunluk=this.Tc_no.lenght;
@@ -53,7 +60,8 @@ export class HomePage {
 
   PushPage(item){
     this.navCtrl.push(ListePage,{
-      al:item
+      al:item,
+      Tc:this.Tc_no
     })
   }
 
@@ -73,6 +81,8 @@ export class HomePage {
         () => console.log(res);
         console.log(this.liste);
         if(this.liste!=""){
+          this.storage.set('id',1);
+          this.storage.set('liste,',this.liste);
           this.PushPage(this.liste);
         }
         else{
@@ -87,13 +97,7 @@ export class HomePage {
     }  
   }
 
-  ionViewDidLoad() {
-    
-    setTimeout(() => this.splash = false, 4000);
   
-
-  }
-
   
 }
 

@@ -1,22 +1,35 @@
 <ion-header>
 
   <ion-navbar color="danger" hideBackButton="true">
+    <ion-buttons end>
+      <button class="logout" ion-button icon-only (click)="LogOut()">
+        <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title><h4>Uyugulanan Tetkikler</h4></ion-title>
 
   </ion-navbar>
-<div class="search">    <ion-searchbar ios="ios-min-hight:150px" ></ion-searchbar>
-</div>
-
-  
+  <div class="search">    <ion-searchbar ios="ios-min-hight:150px" 
+    [(ngModel)]="search"
+    [showCancelButton]="shouldShowCancel"
+    (ionCancel)="onCancel($event)">
+  ></ion-searchbar>
+  </div>
 </ion-header>
 
 
 <ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content 
+    pullingText="Yenileniyor..."
+    pullingIcon="arrow-dropdown"
+    refreshingSpinner="circles"
+    refreshingText="...Yüklendi"></ion-refresher-content>
+  </ion-refresher>
 
-
-<div *ngFor="let liste of item">
-    
-    <div class="tetkik_adi"><button ion-button full >{{liste.TETKIK}}</button></div>
+<div *ngFor="let liste of item | filtre:search" class="a">
+    <!-- <button ion-button full >{{liste.TETKIK}}</button>-->
+    <div class="tetkik_adi"><div>{{liste.TETKIK}}</div></div>
     <div class="icerik">
       <ion-grid>
         <ion-row>
